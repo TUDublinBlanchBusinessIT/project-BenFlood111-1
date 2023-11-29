@@ -5,7 +5,7 @@ create table foodorder (
     id int auto_increment,
     firstname varchar(30),
     surname varchar(30),
-    bagsUnderTenKG int,
-    bagsOverTenKG int,
+    adressLine1 varchar(30),
+    adressLine2 varchar(30),
     primary key(id)
 );
