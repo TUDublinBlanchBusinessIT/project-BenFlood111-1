@@ -25,3 +25,18 @@ create table DrinksMenu (
 );
 
 
+create table orders (
+    id int auto_increment,
+    firstname varchar(30),
+    surname varchar(30),
+    adressLine1 varchar(30),
+    adressLine2 varchar(30),
+    order_date timestamp default current_timestamp,
+    mains_id int,
+    desserts_id int,
+    drinks_id int,
+    foreign key (mains_id) references MainsMenu(id),
+    foreign key (desserts_id) references DessertMenu(id),
+    foreign key (drinks_id) references DrinksMenu(id),
+    primary key(id)
+);
