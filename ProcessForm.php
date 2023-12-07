@@ -12,7 +12,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $adressLine1 = $_POST["adressLine1"];
     $adressLine2 = $_POST["adressLine2"];
 
-    
+    $sql = "Insert into orders (mains_id, desserts_id, drinks_id, firstName, surName, adressLine1, adressLine2)
+    values ('$mains_id', '$desserts_id', '$drinks_id', '$firstName', '$surName', '$adressLine1', '$adressLine2')";
+
+
 
 
 ?>
