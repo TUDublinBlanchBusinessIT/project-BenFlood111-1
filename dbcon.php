@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "bookflight";
+$dbname = "dentist";
 $port = 3306;
 
 // Create connection

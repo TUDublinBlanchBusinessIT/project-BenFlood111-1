@@ -8,7 +8,9 @@
 <body>
     <form action = "OrderForm.php" method="post"
         <label for="mains_id"> Choose your mains:</label> 
-        <select name="mains_id"></select>
+        <select name="mains_id">
+            <?php include "mains.php"; ?> 
+        </select>
      <br>
         <label for="desserts_id"> Choose your desserts:</label>
         <select name="desserts_id"></select>
@@ -30,9 +32,5 @@
      <br>
         <input type="submit" value="Place Order">
     </form>
-   
-   
-
-   
 </body>
 </html>

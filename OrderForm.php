@@ -1,14 +1,14 @@
 <?php
 session_start();
-include("dbcon.php")
+include("dbcon.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $mains_id = $_POST["mains_id"];
-    $desserts_id = $_POST["desserts_id"];
-    $drinks_id = $_POST["drinks_id"];
+    $mains_id = isset($_POST["mains_id"]) ? $_POST["mains_id"] : null;
+    $desserts_id = isset($_POST["desserts_id"]) ? $_POST["desserts_id"] : null;
+    $drinks_id = isset($_POST["drinks_id"]) ? $_POST["drinks_id"] : null;
     $firstName = $_POST["firstName"];
-    $lastName = $_POST["lastName"];
+    $surName = $_POST["surName"];
     $adressLine1 = $_POST["adressLine1"];
     $adressLine2 = $_POST["adressLine2"];
 
@@ -22,6 +22,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       }
       
       mysqli_close($conn);
+    }
 
 
 ?>
+
+$mains_id = $_POST["mains_id"];
+    $desserts_id = $_POST["desserts_id"];
+    $drinks_id = $_POST["drinks_id"];
+    $firstName = $_POST["firstName"];
+    $surName = $_POST["surName"];
+    $adressLine1 = $_POST["adressLine1"];
+    $adressLine2 = $_POST["adressLine2"];
